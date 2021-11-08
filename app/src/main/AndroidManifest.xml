@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.games.epicworld">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.games.epicworld.presentation.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EpicWorld">
+        <activity
+            android:name="com.games.epicworld.presentation.activity.MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.EpicWorld.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.games.epicworld.presentation.activity.SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.EpicWorld.SplashTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
